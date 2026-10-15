@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "corridor_stops": [
+      "Freihofstrasse",
+      "Letzigrund",
+      "Albisriederplatz",
+      "Zypressenstrasse",
+      "Lochergut",
+      "Kalkbreite/Bhf.Wiedikon",
+      "Bezirksgeb\u00e4ude",
+      "Stauffacher"
+    ],
+    "stop_codes": [
+      "FREI",
+      "LETG",
+      "ALBP",
+      "ZYPR",
+      "LOCH",
+      "KALK",
+      "BEZI",
+      "STAU"
+    ],
+    "time_horizon": "08:00 - 08:18 (1-min intervals)"
+  },
+  "plans": {
+    "plan_1_utilitarian": {
+      "title": "Plan 1: Traffic Efficiency (Utilitarian)",
+      "description": "Minimizes aggregate vehicle delay. Inviolable paratransit is bought off.",
+      "schedule": {
+        "ambulance": {
+          "name": "Emergency Ambulance",
+          "delay_min": 0,
+          "dep_time": 2,
+          "arr_time": 8,
+          "deadline": 9,
+          "met_deadline": true,
+          "occupancy": 2,
+          "pax_delay_min": 0
+        },
+        "dialysis": {
+          "name": "Paratransit (Dialysis Patient)",
+          "delay_min": 1,
+          "dep_time": 5,
+          "arr_time": 9,
+          "deadline": 11,
+          "met_deadline": true,
+          "occupancy": 1,
+          "pax_delay_min": 1
+        },
+        "tram": {
+          "name": "VBZ Tram (185 Pax)",
+          "delay_min": 5,
+          "dep_time": 8,
+          "arr_time": 14,
+          "deadline": 13,
+          "met_deadline": false,
+          "occupancy": 185,
+          "pax_delay_min": 925
+        },
+        "delivery": {
+          "name": "Urban Delivery Van",
+          "delay_min": 0,
+          "dep_time": 2,
+          "arr_time": 5,
+          "deadline": 10,
+          "met_deadline": true,
+          "occupancy": 1,
+          "pax_delay_min": 0
+        },
+        "car": {
+          "name": "General Commuters",
+          "delay_min": 3,
+          "dep_time": 5,
+          "arr_time": 10,
+          "deadline": 14,
+          "met_deadline": true,
+          "occupancy": 1,
+          "pax_delay_min": 3
+        }
+      },
+      "ambulance_delay": 0,
+      "dialysis_met_deadline": true,
+      "tram_delay": 5,
+      "delivery_delay": 0,
+      "car_delay": 3,
+      "total_pax_delay": 929,
+      "winners": [
+        "General Cars",
+        "Delivery Van"
+      ],
+      "losers": [
+        "Dialysis Patient (Misses Clinic)",
+        "185 Tram Passengers"
+      ]
+    },
+    "plan_2_equity": {
+      "title": "Plan 2: Transit & Equity-First (Council Recommendation)",
+      "description": "Protects life-safety and medical rights. Tram delay prioritized by occupancy.",
+      "schedule": {
+        "ambulance": {
+          "name": "Emergency Ambulance",
+          "delay_min": 0,
+          "dep_time": 2,
+          "arr_time": 8,
+          "deadline": 9,
+          "met_deadline": true,
+          "occupancy": 2,
+          "pax_delay_min": 0
+        },
+        "dialysis": {
+          "name": "Paratransit (Dialysis Patient)",
+          "delay_min": 1,
+          "dep_time": 5,
+          "arr_time": 9,
+          "deadline": 11,
+          "met_deadline": true,
+          "occupancy": 1,
+          "pax_delay_min": 1
+        },
+        "tram": {
+          "name": "VBZ Tram (185 Pax)",
+          "delay_min": 1,
+          "dep_time": 4,
+          "arr_time": 10,
+          "deadline": 13,
+          "met_deadline": true,
+          "occupancy": 185,
+          "pax_delay_min": 185
+        },
+        "delivery": {
+          "name": "Urban Delivery Van",
+          "delay_min": 0,
+          "dep_time": 2,
+          "arr_time": 5,
+          "deadline": 10,
+          "met_deadline": true,
+          "occupancy": 1,
+          "pax_delay_min": 0
+        },
+        "car": {
+          "name": "General Commuters",
+          "delay_min": 3,
+          "dep_time": 5,
+          "arr_time": 10,
+          "deadline": 14,
+          "met_deadline": true,
+          "occupancy": 1,
+          "pax_delay_min": 3
+        }
+      },
+      "ambulance_delay": 0,
+      "dialysis_met_deadline": true,
+      "tram_delay": 1,
+      "delivery_delay": 0,
+      "car_delay": 3,
+      "total_pax_delay": 189,
+      "winners": [
+        "Ambulance (Direct Clear Run)",
+        "Dialysis Patient (On Time)",
+        "185 Tram Passengers"
+      ],
+      "losers": [
+        "Delivery Van (+2 min)",
+        "Commuter Cars (+3 min)"
+      ]
+    },
+    "plan_3_commercial": {
+      "title": "Plan 3: Commercial Compromise",
+      "description": "Maintains dialysis protection while guaranteeing delivery van curb slot.",
+      "schedule": {
+        "ambulance": {
+          "name": "Emergency Ambulance",
+          "delay_min": 0,
+          "dep_time": 2,
+          "arr_time": 8,
+          "deadline": 9,
+          "met_deadline": true,
+          "occupancy": 2,
+          "pax_delay_min": 0
+        },
+        "dialysis": {
+          "name": "Paratransit (Dialysis Patient)",
+          "delay_min": 1,
+          "dep_time": 5,
+          "arr_time": 9,
+          "deadline": 11,
+          "met_deadline": true,
+          "occupancy": 1,
+          "pax_delay_min": 1
+        },
+        "tram": {
+          "name": "VBZ Tram (185 Pax)",
+          "delay_min": 1,
+          "dep_time": 4,
+          "arr_time": 10,
+          "deadline": 13,
+          "met_deadline": true,
+          "occupancy": 185,
+          "pax_delay_min": 185
+        },
+        "delivery": {
+          "name": "Urban Delivery Van",
+          "delay_min": 0,
+          "dep_time": 2,
+          "arr_time": 5,
+          "deadline": 10,
+          "met_deadline": true,
+          "occupancy": 1,
+          "pax_delay_min": 0
+        },
+        "car": {
+          "name": "General Commuters",
+          "delay_min": 3,
+          "dep_time": 5,
+          "arr_time": 10,
+          "deadline": 14,
+          "met_deadline": true,
+          "occupancy": 1,
+          "pax_delay_min": 3
+        }
+      },
+      "ambulance_delay": 0,
+      "dialysis_met_deadline": true,
+      "tram_delay": 1,
+      "delivery_delay": 0,
+      "car_delay": 3,
+      "total_pax_delay": 189,
+      "winners": [
+        "Delivery Van (On Time)",
+        "Dialysis Patient (On Time)"
+      ],
+      "losers": [
+        "Commuter Cars (+4 min)",
+        "Tram (+1 min)"
+      ]
+    }
+  }
+}

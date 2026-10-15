@@ -1,0 +1,59 @@
+PATHFINDER: A SMALL ROUTING PROBLEM AS A QUBO
+
+Files
+  Pathfinder_Introduction.ipynb   Worked notebook with saved example outputs
+  requirements.txt               Exact package versions used for the tested run
+
+The mentor package also contains TUTOR_NOTES.txt for Fabienne and other mentors.
+
+The notebook introduces a single synthetic journey, one-hot encoding, QUBO
+generation, exact verification, simulated annealing and feasibility checks.
+Students then explore changes to the example. Their challenge work adds competing
+journeys, capacity and priority requirements.
+
+IF YOUR PATHFINDER ENVIRONMENT IS ALREADY INSTALLED
+
+Open JupyterLab from that environment and open Pathfinder_Introduction.ipynb.
+Select the correct Python kernel, then choose:
+  Kernel > Restart Kernel and Run All Cells
+
+Do not reinstall packages simply to open this cleaned copy. Its computational
+code uses the same packages as the successfully tested Core Workflow notebook.
+
+NEW INSTALLATION: TESTED MACOS SETUP
+
+Python 3.12 is required for these instructions. Unzip the package, open Terminal
+in the extracted folder, then run these commands one at a time:
+
+  python3.12 -m venv .venv
+  source .venv/bin/activate
+  python -m pip install --upgrade pip
+  python -m pip install -r requirements.txt
+  python -m jupyterlab Pathfinder_Introduction.ipynb
+
+Installation requires internet access. No accounts, keys, paid services or city
+datasets are needed. The notebook itself runs locally after installation.
+
+The recorded run used Python 3.12.15 on macOS with Apple Silicon. The pinned
+environment has not been tested on Windows, Linux or hosted notebook services;
+ask a mentor for help adapting the setup rather than changing versions at random.
+If installation fails, retain the error message and show it to a mentor.
+
+WHAT TO EXPECT
+
+The exact solver checks 32,768 bitstrings. It identifies the unique optimum:
+  Depot (1) -> Centre (3) -> Station (5), taking 5 minutes.
+
+The annealer performs five batches of ten reads. Its results can vary. Check
+feasibility and the gap to the exact optimum rather than assuming every sample
+represents a valid route. A first-run Matplotlib font-cache message is normal.
+
+Save your own copy before attempting the exercises. Restart and run all cells
+after changing the network or penalties, and start each exercise from the
+original network. The saved outputs illustrate the original example.
+
+SHARING
+
+For Moodle, upload Pathfinder_Student_Package.zip, which contains the notebook,
+requirements.txt and this file. TUTOR_NOTES.txt contains exercise pointers and
+is included only in the mentor package. No virtual environment needs uploading.

@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "name": "Zurich Congested Badenerstrasse Corridor (8 stops)",
+    "corridor": "Freihofstrasse - Albisriederplatz - Stauffacher",
+    "segment": "freihof",
+    "num_stops": 8
+  },
+  "nodes": [
+    {
+      "id": "FREI",
+      "name": "Z\u00fcrich, Freihofstrasse",
+      "lat": 47.38315676470588,
+      "lon": 8.499602117647058,
+      "halt_id": 2253
+    },
+    {
+      "id": "LETG",
+      "name": "Z\u00fcrich, Letzigrund",
+      "lat": 47.38112025,
+      "lon": 8.503945,
+      "halt_id": 2245
+    },
+    {
+      "id": "ALBP",
+      "name": "Z\u00fcrich, Albisriederplatz",
+      "lat": 47.37883524460432,
+      "lon": 8.510410892086332,
+      "halt_id": 1535
+    },
+    {
+      "id": "ZYPR",
+      "name": "Z\u00fcrich, Zypressenstrasse",
+      "lat": 47.376716736842106,
+      "lon": 8.513857894736843,
+      "halt_id": 2250
+    },
+    {
+      "id": "LOCH",
+      "name": "Z\u00fcrich, Lochergut",
+      "lat": 47.3754184,
+      "lon": 8.517611200000001,
+      "halt_id": 2248
+    },
+    {
+      "id": "KALK",
+      "name": "Z\u00fcrich, Kalkbreite/Bhf.Wiedikon",
+      "lat": 47.374255295774645,
+      "lon": 8.520931225352113,
+      "halt_id": 1906
+    },
+    {
+      "id": "BEZI",
+      "name": "Z\u00fcrich, Bezirksgeb\u00e4ude",
+      "lat": 47.37409471428572,
+      "lon": 8.52554280952381,
+      "halt_id": 1306
+    },
+    {
+      "id": "STAU",
+      "name": "Z\u00fcrich, Stauffacher",
+      "lat": 47.37313868518518,
+      "lon": 8.5292995,
+      "halt_id": 1502
+    }
+  ],
+  "edges": [
+    {
+      "from": "FREI",
+      "to": "LETG",
+      "planned_sec": 48.0,
+      "actual_sec": 49.0,
+      "delay_sec": 21.09,
+      "lines": [
+        2
+      ],
+      "trip_count": 992
+    },
+    {
+      "from": "LETG",
+      "to": "ALBP",
+      "planned_sec": 72.0,
+      "actual_sec": 71.0,
+      "delay_sec": 21.08,
+      "lines": [
+        2
+      ],
+      "trip_count": 992
+    },
+    {
+      "from": "LETG",
+      "to": "FREI",
+      "planned_sec": 48.0,
+      "actual_sec": 49.0,
+      "delay_sec": 1.79,
+      "lines": [
+        2
+      ],
+      "trip_count": 992
+    },
+    {
+      "from": "ALBP",
+      "to": "LETG",
+      "planned_sec": 72.0,
+      "actual_sec": 73.0,
+      "delay_sec": -2.4,
+      "lines": [
+        2
+      ],
+      "trip_count": 992
+    },
+    {
+      "from": "ALBP",
+      "to": "ZYPR",
+      "planned_sec": 54.0,
+      "actual_sec": 52.0,
+      "delay_sec": 10.85,
+      "lines": [
+        2,
+        3
+      ],
+      "trip_count": 1949
+    },
+    {
+      "from": "ZYPR",
+      "to": "ALBP",
+      "planned_sec": 54.0,
+      "actual_sec": 55.0,
+      "delay_sec": -3.97,
+      "lines": [
+        2,
+        3
+      ],
+      "trip_count": 1945
+    },
+    {
+      "from": "ZYPR",
+      "to": "LOCH",
+      "planned_sec": 48.0,
+      "actual_sec": 45.0,
+      "delay_sec": 11.03,
+      "lines": [
+        2,
+        3
+      ],
+      "trip_count": 1962
+    },
+    {
+      "from": "LOCH",
+      "to": "KALK",
+      "planned_sec": 66.0,
+      "actual_sec": 67.0,
+      "delay_sec": 7.88,
+      "lines": [
+        2,
+        3
+      ],
+      "trip_count": 1961
+    },
+    {
+      "from": "LOCH",
+      "to": "ZYPR",
+      "planned_sec": 42.0,
+      "actual_sec": 45.0,
+      "delay_sec": -7.12,
+      "lines": [
+        2,
+        3
+      ],
+      "trip_count": 1958
+    },
+    {
+      "from": "KALK",
+      "to": "BEZI",
+      "planned_sec": 60.0,
+      "actual_sec": 60.0,
+      "delay_sec": 12.36,
+      "lines": [
+        2,
+        3
+      ],
+      "trip_count": 1854
+    },
+    {
+      "from": "KALK",
+      "to": "LOCH",
+      "planned_sec": 72.0,
+      "actual_sec": 71.0,
+      "delay_sec": -6.27,
+      "lines": [
+        2,
+        3
+      ],
+      "trip_count": 1960
+    },
+    {
+      "from": "BEZI",
+      "to": "KALK",
+      "planned_sec": 60.0,
+      "actual_sec": 59.0,
+      "delay_sec": -12.24,
+      "lines": [
+        2,
+        3
+      ],
+      "trip_count": 1917
+    },
+    {
+      "from": "BEZI",
+      "to": "STAU",
+      "planned_sec": 78.0,
+      "actual_sec": 73.0,
+      "delay_sec": 12.47,
+      "lines": [
+        2,
+        3,
+        4,
+        13
+      ],
+      "trip_count": 1957
+    },
+    {
+      "from": "STAU",
+      "to": "BEZI",
+      "planned_sec": 78.0,
+      "actual_sec": 75.0,
+      "delay_sec": -13.78,
+      "lines": [
+        2,
+        3
+      ],
+      "trip_count": 1915
+    }
+  ],
+  "travel_time_matrix_sec": {
+    "FREI": {
+      "FREI": 0.0,
+      "LETG": 48.0,
+      "ALBP": 120.0,
+      "ZYPR": 174.0,
+      "LOCH": 216.0,
+      "KALK": 288.0,
+      "BEZI": 348.0,
+      "STAU": 426.0
+    },
+    "LETG": {
+      "FREI": 48.0,
+      "LETG": 0.0,
+      "ALBP": 72.0,
+      "ZYPR": 126.0,
+      "LOCH": 168.0,
+      "KALK": 240.0,
+      "BEZI": 300.0,
+      "STAU": 378.0
+    },
+    "ALBP": {
+      "FREI": 120.0,
+      "LETG": 72.0,
+      "ALBP": 0.0,
+      "ZYPR": 54.0,
+      "LOCH": 96.0,
+      "KALK": 168.0,
+      "BEZI": 228.0,
+      "STAU": 306.0
+    },
+    "ZYPR": {
+      "FREI": 174.0,
+      "LETG": 126.0,
+      "ALBP": 54.0,
+      "ZYPR": 0.0,
+      "LOCH": 42.0,
+      "KALK": 114.0,
+      "BEZI": 174.0,
+      "STAU": 252.0
+    },
+    "LOCH": {
+      "FREI": 222.0,
+      "LETG": 174.0,
+      "ALBP": 102.0,
+      "ZYPR": 48.0,
+      "LOCH": 0.0,
+      "KALK": 72.0,
+      "BEZI": 132.0,
+      "STAU": 210.0
+    },
+    "KALK": {
+      "FREI": 288.0,
+      "LETG": 240.0,
+      "ALBP": 168.0,
+      "ZYPR": 114.0,
+      "LOCH": 66.0,
+      "KALK": 0.0,
+      "BEZI": 60.0,
+      "STAU": 138.0
+    },
+    "BEZI": {
+      "FREI": 348.0,
+      "LETG": 300.0,
+      "ALBP": 228.0,
+      "ZYPR": 174.0,
+      "LOCH": 126.0,
+      "KALK": 60.0,
+      "BEZI": 0.0,
+      "STAU": 78.0
+    },
+    "STAU": {
+      "FREI": 426.0,
+      "LETG": 378.0,
+      "ALBP": 306.0,
+      "ZYPR": 252.0,
+      "LOCH": 204.0,
+      "KALK": 138.0,
+      "BEZI": 78.0,
+      "STAU": 0.0
+    }
+  }
+}

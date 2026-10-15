@@ -1,0 +1,12 @@
+# System and IDE
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+.venv/
+
+# Datasets and large files
+Data/
+Data/*
+*.csv
+*.zip
